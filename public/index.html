@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name — Portfolio</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">YN</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#timeline">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-content">
+    <p class="kicker">Available for new work</p>
+    <h1>I build software people actually want to use.</h1>
+    <p class="lede">Designer-engineer in <em>your city</em>. I help product teams ship calm, focused interfaces.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#work">See selected work</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <p class="muted">Recent projects.</p>
+  </div>
+  <div class="projects">
+    <article class="project">
+      <div class="project-image grad-1"></div>
+      <h3>Ledger — finance for solo operators</h3>
+      <p class="muted">Lead designer • 2026</p>
+      <p>Built the entire visual system and the multi-account ledger UI for a profitability-tracking tool now used by 2,400+ paying customers.</p>
+      <div class="tags"><span>Product design</span><span>Front-end</span><span>SaaS</span></div>
+    </article>
+    <article class="project">
+      <div class="project-image grad-2"></div>
+      <h3>Compass — travel itineraries for editors</h3>
+      <p class="muted">Engineer • 2025</p>
+      <p>Rewrote the editor as a real-time collaborative document; reduced average save latency from 800ms to 60ms.</p>
+      <div class="tags"><span>React</span><span>CRDTs</span><span>Editor</span></div>
+    </article>
+    <article class="project">
+      <div class="project-image grad-3"></div>
+      <h3>Calm — meditation app v2</h3>
+      <p class="muted">Design lead • 2024</p>
+      <p>Redesigned the home, library, and player. Time-to-first-session dropped 32% in the launch quarter.</p>
+      <div class="tags"><span>iOS</span><span>Mobile UX</span><span>Design system</span></div>
+    </article>
+    <article class="project">
+      <div class="project-image grad-4"></div>
+      <h3>Northwind — internal analytics suite</h3>
+      <p class="muted">Designer • 2024</p>
+      <p>Replaced a sprawling internal dashboards graveyard with a single tool. Adoption went from 40% to 91% in six weeks.</p>
+      <div class="tags"><span>Dashboards</span><span>Data viz</span><span>Internal tools</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-text">
+    <h2>About</h2>
+    <p>I work where design and engineering overlap. My favorite week is one spent making a hundred small calls that nobody will notice individually, but which add up to a product that feels considered.</p>
+    <p>Currently: open to senior IC roles or short contracts. I work best with small teams who care about craft.</p>
+    <div class="stack">
+      <span>TypeScript</span><span>React</span><span>Swift</span><span>Figma</span><span>Postgres</span><span>Design systems</span>
+    </div>
+  </div>
+  <div class="about-photo"></div>
+</section>
+
+<section id="timeline" class="timeline">
+  <h2>Experience</h2>
+  <ol class="timeline-list">
+    <li>
+      <div class="t-date">2024 — Present</div>
+      <div class="t-role"><strong>Senior Designer</strong> · Ledger</div>
+      <ul>
+        <li>Owns the product design surface end-to-end across web + iOS.</li>
+        <li>Shipped the multi-account model that grew MRR 3.4× in 9 months.</li>
+      </ul>
+    </li>
+    <li>
+      <div class="t-date">2022 — 2024</div>
+      <div class="t-role"><strong>Product Designer</strong> · Calm</div>
+      <ul>
+        <li>Led the iOS redesign that cut TTFV in half.</li>
+        <li>Owned the cross-platform design system migration.</li>
+      </ul>
+    </li>
+    <li>
+      <div class="t-date">2019 — 2022</div>
+      <div class="t-role"><strong>Front-end Engineer</strong> · Northwind</div>
+      <ul>
+        <li>Built the data-viz library used across 30+ internal dashboards.</li>
+        <li>Author of the team's accessibility guidelines (still in use).</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-text">
+    <h2>Let's talk.</h2>
+    <p>Hiring, contracting, or just want to chat about a problem? Drop a line — I read everything.</p>
+    <p class="muted small">Or reach me on <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>, <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </div>
+  <form class="contact-form" id="contact-form">
+    <label>Name <input name="name" required maxlength="120" /></label>
+    <label>Email <input type="email" name="email" required /></label>
+    <label>Message <textarea name="message" required maxlength="4000" rows="5"></textarea></label>
+    <button class="btn primary" type="submit">Send</button>
+    <div id="contact-status" hidden></div>
+  </form>
+</section>
+
+<footer>
+  <span>© <span id="year"></span> Your Name</span>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
